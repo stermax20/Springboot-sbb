@@ -1,0 +1,111 @@
+2024-11-20 11:13:08.715  INFO 15240 --- [sbb] [restartedMain] com.mysite.sbb.SbbApplication            : Starting SbbApplication using Java 21.0.3 with PID 15240 (E:\Working Directory\Springboot\sbb\bin\main started by USER in E:\Working Directory\Springboot\sbb)
+2024-11-20 11:13:08.715 DEBUG 15240 --- [sbb] [restartedMain] com.mysite.sbb.SbbApplication            : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-11-20 11:13:08.716  INFO 15240 --- [sbb] [restartedMain] com.mysite.sbb.SbbApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-20 11:13:08.843  INFO 15240 --- [sbb] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-20 11:13:08.846  INFO 15240 --- [sbb] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-20 11:13:09.191  INFO 15240 --- [sbb] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-20 11:13:09.227  INFO 15240 --- [sbb] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 4 JPA repository interfaces.
+2024-11-20 11:13:09.528  INFO 15240 --- [sbb] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8086 (http)
+2024-11-20 11:13:09.535  INFO 15240 --- [sbb] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-20 11:13:09.536  INFO 15240 --- [sbb] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-11-20 11:13:09.561  INFO 15240 --- [sbb] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-20 11:13:09.561  INFO 15240 --- [sbb] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 715 ms
+2024-11-20 11:13:09.577  INFO 15240 --- [sbb] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-20 11:13:09.708  INFO 15240 --- [sbb] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:~/local user=SA
+2024-11-20 11:13:09.710  INFO 15240 --- [sbb] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-20 11:13:09.716  INFO 15240 --- [sbb] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/local'
+2024-11-20 11:13:09.781 DEBUG 15240 --- [sbb] [restartedMain] c.m.sbb.jwt.TokenAuthenticationFilter    : Filter 'tokenAuthenticationFilter' configured for use
+2024-11-20 11:13:09.782 DEBUG 15240 --- [sbb] [restartedMain] c.mysite.sbb.jwt.TokenExceptionFilter    : Filter 'tokenExceptionFilter' configured for use
+2024-11-20 11:13:10.022  INFO 15240 --- [sbb] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-20 11:13:10.600  INFO 15240 --- [sbb] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-20 11:13:10.741  INFO 15240 --- [sbb] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-11-20 11:13:11.045  WARN 15240 --- [sbb] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-20 11:13:11.055  INFO 15240 --- [sbb] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userSecurityService
+2024-11-20 11:13:11.096  INFO 15240 --- [sbb] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-11-20 11:13:11.199  WARN 15240 --- [sbb] [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore org.springframework.boot.autoconfigure.security.servlet.PathRequest$H2ConsoleRequestMatcher@2d8e8711. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-11-20 11:13:11.199  WARN 15240 --- [sbb] [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-11-20 11:13:11.200  WARN 15240 --- [sbb] [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-11-20 11:13:11.360  INFO 15240 --- [sbb] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-20 11:13:11.380  INFO 15240 --- [sbb] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8086 (http) with context path '/'
+2024-11-20 11:13:11.385  INFO 15240 --- [sbb] [restartedMain] com.mysite.sbb.SbbApplication            : Started SbbApplication in 2.915 seconds (process running for 3.349)
+2024-11-20 11:14:34.755  INFO 15240 --- [sbb] [RMI TCP Connection(11)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-11-20 11:14:34.784  INFO 15240 --- [sbb] [RMI TCP Connection(11)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-20 11:14:34.790  INFO 15240 --- [sbb] [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-20 11:14:35.014  INFO 15240 --- [sbb] [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-20 11:14:36.346  INFO 14632 --- [sbb] [restartedMain] com.mysite.sbb.SbbApplication            : Starting SbbApplication using Java 21.0.3 with PID 14632 (E:\Working Directory\Springboot\sbb\bin\main started by USER in E:\Working Directory\Springboot\sbb)
+2024-11-20 11:14:36.347  INFO 14632 --- [sbb] [restartedMain] com.mysite.sbb.SbbApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-20 11:14:36.478  INFO 14632 --- [sbb] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-20 11:14:36.478  INFO 14632 --- [sbb] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-20 11:14:36.836  INFO 14632 --- [sbb] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-20 11:14:36.871  INFO 14632 --- [sbb] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 4 JPA repository interfaces.
+2024-11-20 11:14:37.194  INFO 14632 --- [sbb] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8086 (http)
+2024-11-20 11:14:37.202  INFO 14632 --- [sbb] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-20 11:14:37.202  INFO 14632 --- [sbb] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-11-20 11:14:37.231  INFO 14632 --- [sbb] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-20 11:14:37.231  INFO 14632 --- [sbb] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 753 ms
+2024-11-20 11:14:37.248  INFO 14632 --- [sbb] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-20 11:14:37.387  INFO 14632 --- [sbb] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:~/local user=SA
+2024-11-20 11:14:37.388  INFO 14632 --- [sbb] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-20 11:14:37.394  INFO 14632 --- [sbb] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/local'
+2024-11-20 11:14:37.715  INFO 14632 --- [sbb] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-20 11:14:38.436  INFO 14632 --- [sbb] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-20 11:14:38.574  INFO 14632 --- [sbb] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-11-20 11:14:38.942  WARN 14632 --- [sbb] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-20 11:14:38.953  INFO 14632 --- [sbb] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userSecurityService
+2024-11-20 11:14:38.991  INFO 14632 --- [sbb] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-11-20 11:14:39.103  WARN 14632 --- [sbb] [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore org.springframework.boot.autoconfigure.security.servlet.PathRequest$H2ConsoleRequestMatcher@733940af. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-11-20 11:14:39.103  WARN 14632 --- [sbb] [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-11-20 11:14:39.103  WARN 14632 --- [sbb] [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-11-20 11:14:39.251  INFO 14632 --- [sbb] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-20 11:14:39.273  INFO 14632 --- [sbb] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8086 (http) with context path '/'
+2024-11-20 11:14:39.279  INFO 14632 --- [sbb] [restartedMain] com.mysite.sbb.SbbApplication            : Started SbbApplication in 3.157 seconds (process running for 3.533)
+2024-11-20 11:14:41.251  INFO 14632 --- [sbb] [http-nio-8086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-20 11:14:41.251  INFO 14632 --- [sbb] [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-20 11:14:41.252  INFO 14632 --- [sbb] [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-11-20 11:14:41.294  INFO 14632 --- [sbb] [http-nio-8086-exec-2] c.m.sbb.question.QuestionController      : page: 0, keyword: 
+2024-11-20 11:15:27.027  INFO 14632 --- [sbb] [http-nio-8086-exec-6] c.m.sbb.question.QuestionController      : page: 0, keyword: 
+2024-11-20 11:15:33.922  INFO 14632 --- [sbb] [http-nio-8086-exec-1] c.m.sbb.question.QuestionController      : page: 3, keyword: 
+2024-11-20 11:15:57.076  INFO 14632 --- [sbb] [http-nio-8086-exec-7] c.m.sbb.question.QuestionController      : page: 3, keyword: 
+2024-11-20 11:16:06.816  INFO 14632 --- [sbb] [http-nio-8086-exec-2] c.m.sbb.question.QuestionController      : page: 0, keyword: 250
+2024-11-20 11:18:11.630  INFO 14632 --- [sbb] [RMI TCP Connection(14)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-11-20 11:18:11.645  INFO 14632 --- [sbb] [RMI TCP Connection(14)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-20 11:18:11.647  INFO 14632 --- [sbb] [RMI TCP Connection(14)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-20 11:18:11.655  INFO 14632 --- [sbb] [RMI TCP Connection(14)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-20 11:18:13.057  INFO 22736 --- [sbb] [restartedMain] com.mysite.sbb.SbbApplication            : Starting SbbApplication using Java 21.0.3 with PID 22736 (E:\Working Directory\Springboot\sbb\bin\main started by USER in E:\Working Directory\Springboot\sbb)
+2024-11-20 11:18:13.058  INFO 22736 --- [sbb] [restartedMain] com.mysite.sbb.SbbApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-11-20 11:18:13.190  INFO 22736 --- [sbb] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-20 11:18:13.190  INFO 22736 --- [sbb] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-20 11:18:13.556  INFO 22736 --- [sbb] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-20 11:18:13.591  INFO 22736 --- [sbb] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 4 JPA repository interfaces.
+2024-11-20 11:18:13.897  INFO 22736 --- [sbb] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8086 (http)
+2024-11-20 11:18:13.904  INFO 22736 --- [sbb] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-20 11:18:13.904  INFO 22736 --- [sbb] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-11-20 11:18:13.932  INFO 22736 --- [sbb] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-20 11:18:13.932  INFO 22736 --- [sbb] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 741 ms
+2024-11-20 11:18:13.953  INFO 22736 --- [sbb] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-20 11:18:14.094  INFO 22736 --- [sbb] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:~/local user=SA
+2024-11-20 11:18:14.095  INFO 22736 --- [sbb] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-20 11:18:14.101  INFO 22736 --- [sbb] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/local'
+2024-11-20 11:18:14.426  INFO 22736 --- [sbb] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-20 11:18:15.039  INFO 22736 --- [sbb] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-20 11:18:15.171  INFO 22736 --- [sbb] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-11-20 11:18:15.488  WARN 22736 --- [sbb] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-20 11:18:15.499  INFO 22736 --- [sbb] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userSecurityService
+2024-11-20 11:18:15.535  INFO 22736 --- [sbb] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-11-20 11:18:15.648  WARN 22736 --- [sbb] [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore org.springframework.boot.autoconfigure.security.servlet.PathRequest$H2ConsoleRequestMatcher@5ab8717f. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-11-20 11:18:15.649  WARN 22736 --- [sbb] [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-11-20 11:18:15.649  WARN 22736 --- [sbb] [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2024-11-20 11:18:15.797  INFO 22736 --- [sbb] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-20 11:18:15.819  INFO 22736 --- [sbb] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8086 (http) with context path '/'
+2024-11-20 11:18:15.824  INFO 22736 --- [sbb] [restartedMain] com.mysite.sbb.SbbApplication            : Started SbbApplication in 3.011 seconds (process running for 3.457)
+2024-11-20 11:18:24.792  INFO 22736 --- [sbb] [http-nio-8086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-20 11:18:24.792  INFO 22736 --- [sbb] [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-20 11:18:24.793  INFO 22736 --- [sbb] [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-11-20 11:18:24.822  INFO 22736 --- [sbb] [http-nio-8086-exec-1] c.m.sbb.question.QuestionController      : page: 0, keyword: 250
+2024-11-20 11:18:36.860  INFO 22736 --- [sbb] [http-nio-8086-exec-9] c.m.sbb.question.QuestionController      : page: 0, keyword: 
+2024-11-20 11:18:41.522  INFO 22736 --- [sbb] [http-nio-8086-exec-5] c.m.sbb.question.QuestionController      : page: 8, keyword: 
+2024-11-20 11:18:58.256  INFO 22736 --- [sbb] [http-nio-8086-exec-1] c.m.sbb.question.QuestionController      : page: 0, keyword: 
+2024-11-20 11:19:15.049  INFO 22736 --- [sbb] [RMI TCP Connection(9)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-11-20 11:19:15.068  INFO 22736 --- [sbb] [RMI TCP Connection(9)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-20 11:19:15.070  INFO 22736 --- [sbb] [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-20 11:19:15.274  INFO 22736 --- [sbb] [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

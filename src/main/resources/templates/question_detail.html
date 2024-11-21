@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko" xmlns:th="http://www.thymeleaf.org"
 	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
 	layout:decorate="~{layout}">
 <head>
 <title th:text="|Question-${question.subject}|"></title>
@@ -15,14 +16,53 @@
 		<div>
 			<p th:text="${question.content}"></p>
 		</div>
+		<div class="mb-2">
+			<a href="javascript:void(0);"
+				class="recommend btn btn-outline-secondary btn-sm"
+				th:data-uri="@{|/question/vote/${question.id}|}"> 추천 <span
+				class="badge rounded-pill bg-success"
+				th:text="${#lists.size(question.voter)}"></span>
+			</a> <a th:href="@{|/question/modify/${question.id}|}"
+				class="btn btn-sm btn-outline-secondary"
+				sec:authorize="isAuthenticated()"
+				th:if="${question.author!=null and #authentication.getPrincipal().getUsername()==question.author.username}"
+				th:text="수정"></a> <a href="javascript:void(0);"
+				th:data-uri="@{|/question/delete/${question.id}|}"
+				class="delete btn btn-sm btn-outline-secondary"
+				sec:authorize="isAuthenticated()"
+				th:if="${question.author!=null and #authentication.getPrincipal().getUsername()==question.author.username}"
+				th:text="삭제"></a>
+		</div>
 		<h5 class="border-bottom my-3 py-2"
 			th:text="|${#lists.size(question.answers)}개의 답변이 있습니다.|"></h5>
 		<ul>
 			<li th:each="answer: ${question.answers}">
 				<div>
-					<span th:text="${answer.content}"></span> <span
-						th:if="${answer.author!=null}"
-						th:text="| - ${answer.author.username}|"> </span>
+					<span th:text="${answer.content}"></span> 
+					<span th:if="${answer.author!=null}"
+						th:text="| - ${answer.author.username}|"> 
+					</span> 
+					<span> 
+					<a href="javascript:void();"
+						class="recommend btn btn-outline-secondary btn-sm"
+						th:data-uri="@{|/answer/vote/${answer.id}|}"> 
+						추천 
+						<span class="badge rounded-pill bg-success"
+							th:text="${#lists.size(answer.voter)}"></span>
+					</a> 
+					<a href="javascript:void(0);"
+						th:data-uri="@{|/answer/modify/${answer.id}|}"
+						class="modify btn btn-sm btn-outline-secondary"
+						sec:authorize="isAuthenticated()"
+						th:if="${answer.author!=null and #authentication.getPrincipal().getUsername()==answer.author.username}"
+						th:text="수정"></a> 
+						<a href="javascript:void(0);"
+						th:data-uri="@{|/answer/delete/${answer.id}|}"
+						class="delete btn btn-sm btn-outline-secondary"
+						sec:authorize="isAuthenticated()"
+						th:if="${answer.author!=null and #authentication.getPrincipal().getUsername()==answer.author.username}"
+						th:text="삭제"></a>
+					</span>
 				</div>
 			</li>
 		</ul>
@@ -33,5 +73,35 @@
 			<input class="btn btn-primary my-2" type="submit" value="답변 등록">
 		</form>
 	</div>
+	<script layout:fragment="script" type="text/javascript">
+		const delete_elements = document.getElementsByClassName("delete");
+		Array.from(delete_elements).forEach((element)=>{
+			element.addEventListener('click', (event)=>{
+				if(confirm("정말 삭제하시겠습니까?")){
+					location.href= event.target.dataset.uri;
+				}
+			});
+		});
+		
+		const modify_elements = document.getElementsByClassName("modify");
+		Array.from(modify_elements).forEach((element)=>{
+			element.addEventListener('click', (event)=>{
+				const content = prompt("내용을 입력하세요.");
+				if(content){
+				const uri = event.target.dataset.uri + "?content="+content;
+				location.href = uri;
+				}
+			});
+		});
+		
+		const recommend_elements = document.getElementsByClassName("recommend");
+		Array.from(recommend_elements).forEach((element)=>{
+			element.addEventListener('click', (event)=>{
+				if(confirm("정말 추천하시겠습니까?")){
+				location.href= event.target.dataset.uri;
+				}
+			});
+		});
+	</script>
 </body>
 </html>
